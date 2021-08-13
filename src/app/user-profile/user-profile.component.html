@@ -2,12 +2,11 @@
 <div class="profile-container">
   <!-- Update Profile -->
   <section>
-    <mat-card>
+    <mat-card class="matcard">
       <mat-card-header class="update-header">
         <mat-card-title></mat-card-title>
       </mat-card-header>
-      <mat-card-content>
-        <div class="container">
+      <mat-card-content class="container">
           <form>
             <label>Username: </label>
             <input placeholder={{userData.Username}} readonly><br />
@@ -18,12 +17,11 @@
             <label>Birthday:</label>
             <input placeholder={{userData.Birthday}} readonly><br />
           </form>
-        </div>
       </mat-card-content>
       <mat-card-actions class="update-form--action">
         <button aria-label="button that submits form to update user account" class="btn-update-account"
           mat-raised-button (click)="editUserData()" color="primary">
-          Update
+          Click to Update Profile
         </button>
         <button aria-label="button that removes user account" class="btn-remove-account" mat-stroked-button
           (click)="deleteUserData()" color="primary">
