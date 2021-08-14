@@ -9,6 +9,9 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./welcome-page.component.scss']
 })
 export class WelcomePageComponent implements OnInit {
+  /**
+   * render the Login and Registration component
+   */
   constructor(public dialog: MatDialog) { }
   ngOnInit(): void {
   }
